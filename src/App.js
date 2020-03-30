@@ -27,7 +27,6 @@ const DogStyle = {
   buttonStyle: 'dog-button'
 }
 
-
 const SpaceStyle = {
   title: 'Rocket',
   emoji: '🚀',
@@ -58,7 +57,7 @@ const handleClick = (event) => {
       <Card {...SpaceStyle} 
       handleClick={handleClick}  />
         ) : (
-      <Overlay title='Lemon' emoji='🍋'/> ) }
+      <Overlay title='Rocket' emoji='🚀'/> ) }
     </div>
 
     <div>
@@ -66,7 +65,8 @@ const handleClick = (event) => {
       <Card {...LemonStyle} 
          handleClick={handleClick}  />
           ) : (
-      <Overlay title='Lemon' emoji='🍋'/> ) }
+      <Overlay title='Lemon' emoji='🍋'
+      overlayTop='styleTop' overlayBottom='styleButtom' /> ) }
     </div>
 
     <div>
@@ -74,7 +74,7 @@ const handleClick = (event) => {
       <Card {...DogStyle} 
          handleClick={handleClick} />
         ) : (
-      <Overlay title='Lemon' emoji='🍋'/> ) }
+      <Overlay title='Dog' emoji='🐶'/> ) }
     </div>
   </div>
   )

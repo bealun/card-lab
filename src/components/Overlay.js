@@ -5,8 +5,14 @@ import { Title } from './Title'
 export const Overlay = (props) => {
 
   return (
-    <article>
-      <Title title={props.title} emoji={props.emoji}/>
-    </article>
+    <div className="overlayDiv">
+      <section className="overlayTop">
+        <Title title={props.title} />
+      </section>
+
+      <section className="overlayBottom">
+        <Title emoji={props.emoji} />
+      </section>
+    </div>
   )
 }
